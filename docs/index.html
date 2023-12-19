@@ -1,11 +1,10 @@
 <h1>Kikou les coupains</h1>
 <p>En temps que comptable, je veux que l'addition de <span id="01">1</span> et <span id="02">2</span> fasse <span id="OR">4</span></p>
 <script>
-    const sum = require("../source/Sum");
+    const SumOf = require("../source/Sum");
 
     var O1 = document.getElementById('O1').innerHTML;
     var O2 = document.getElementById('O2').innerHTML;
     var OR = document.getElementById('OR').innerHTML;
-    OR = sum(O1, O2)
-    OR = 45
+    console.log(OR);
 </script>
