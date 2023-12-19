@@ -9,16 +9,16 @@
 
     <h1>Kikou les coupains</h1>
     <div id="result">
-        <p>En temps que comptable, je veux que l'addition de <span id="01">1</span> et <span id="02">2</span> fasse <span id="OR">4</span></p>
+        <p>En temps que comptable, je veux que l'addition de <span id="a">1</span> et <span id="b">2</span> fasse <span id="OR">4</span></p>
     </div>
     
     <script type="text/javascript" src="../source/Sum.js"></script>
     <script>
         function sum(){
             alert("kikou")
-            var resultDiv = document.getElementById('result');
-            var O1 = document.getElementById('O1').innerHTML;
-            var O2 = document.getElementById('O2').innerHTML;
+            var resultDiv = document.getElementById("result");
+            var O1 = document.getElementById("a").innerHTML;
+            var O2 = document.getElementById("b").innerHTML;
             var OR = document.getElementById('OR').innerHTML;
             OR.innerHTML = SumOf(O1, O2);
             console.log(OR);
