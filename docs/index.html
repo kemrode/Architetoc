@@ -8,26 +8,26 @@
 <body onload="sum()">
 
     <h1>Kikou les coupains</h1>
-    <div id="result">
-        <p>En temps que comptable, je veux que l'addition de <span id="a">1</span> et <span id="b">2</span> fasse <span id="OR">4</span></p>
+    <div id="result" style="width: 100%; height: auto; display: flex; flex-direction: row; justify-content: space-evenly;">
+        <p>En temps que comptable, je veux que l'addition de <span id="a">1</span> et <span id="b">2</span> fasse <span id="OR"></span></p>
+        <div id="resultSquare" style="height: 50px; width: 50px;border-radius: 50%;"></div>
     </div>
     
-    <script type="text/javascript" src="./source/Sum.js"></script>
+    <script type="text/javascript" src="../source/Sum.js"></script>
     <script>
+
         function sum(){
 
-            const SumOf = require("./source/SumOf");
-
             var resultDiv = document.getElementById("result");
-            var O1 = document.getElementById("a").innerHTML;
-            var O2 = document.getElementById("b").innerHTML;
-            var OR = document.getElementById('OR').innerHTML;
-            OR.innerHTML = SumOf(O1, O2);
-            console.log(OR);
-            if(OR.valueOf == 3){
-                resultDiv.style.backgroundColor = 'green';
+            var a = document.getElementById("a").innerHTML;
+            var b = document.getElementById("b").innerHTML;
+            var resultSquare = document.getElementById("resultSquare");
+            var resultSum = document.getElementById('OR');
+            resultSum.innerHTML = SumOf(a, b)
+            if(resultSum.innerHTML == "3"){
+                resultSquare.style.backgroundColor = 'green';
             } else {
-                resultDiv.style.backgroundColor = 'red';
+                resultSquare.style.backgroundColor = 'red';
             }
         }
     

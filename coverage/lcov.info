@@ -3,8 +3,8 @@ SF:source/Sum.js
 FN:1,SumOf
 FNF:1
 FNH:1
-FNDA:1,SumOf
-DA:2,1
+FNDA:2,SumOf
+DA:2,2
 DA:5,1
 LF:2
 LH:2
