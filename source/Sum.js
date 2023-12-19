@@ -1,5 +1,5 @@
 function SumOf(a, b) {
-    return a + b;
+    return parseFloat(a) + parseFloat(b);
 };
 
 module.exports = SumOf;
