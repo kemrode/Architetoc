@@ -12,10 +12,12 @@
         <p>En temps que comptable, je veux que l'addition de <span id="a">1</span> et <span id="b">2</span> fasse <span id="OR">4</span></p>
     </div>
     
-    <script type="text/javascript" src="../source/Sum.js"></script>
+    <script type="text/javascript" src="./source/Sum.js"></script>
     <script>
         function sum(){
-            const SumOf = require("../source/SumOf");
+
+            const SumOf = require("./source/SumOf");
+
             var resultDiv = document.getElementById("result");
             var O1 = document.getElementById("a").innerHTML;
             var O2 = document.getElementById("b").innerHTML;
